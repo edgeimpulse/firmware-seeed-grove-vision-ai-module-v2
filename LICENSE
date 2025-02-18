@@ -1,0 +1,6 @@
+Unless specifically indicated otherwise in a file, files are licensed under the The MIT License, as can be found in: LICENSE.mit.
+
+The following source code is licensed under The Clear BSD License:
+* EPII_CM55M_APP_S/app/scenario_app/edge_impulse_firmware
+with the exception for MIT License in:
+* EPII_CM55M_APP_S/app/scenario_app/edge_impulse_firmware/cis_sensor

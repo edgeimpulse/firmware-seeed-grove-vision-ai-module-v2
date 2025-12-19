@@ -143,6 +143,8 @@ bool ei_start_impulse(bool continuous, bool debug, bool use_max_uart_speed)
         ei_sleep(100);
     }
 
+    run_classifier_init();
+
     // start the camera, this is blocking call
     if (cam->start_inference(&snapshot_buf, ei_run_impulse) == false) {
         return false;
@@ -154,6 +156,8 @@ bool ei_start_impulse(bool continuous, bool debug, bool use_max_uart_speed)
         dev->set_default_data_output_baudrate();
         ei_sleep(100);
     }
+
+    run_classifier_deinit();
 
     return true;
 }
